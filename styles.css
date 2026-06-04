@@ -463,28 +463,3 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
-
-/* ===== MOBILE ===== */
-@media (max-width: 768px) {
-  nav {
-    padding: 14px 20px;
-  }
-
-  #hero h1 {
-    font-size: 38px;
-  }
-
-  #hero h2 {
-    font-size: 17px;
-  }
-
-  #skills {
-    position: relative;
-    left: auto;
-    top: auto;
-    width: 100%;
-    max-width: var(--max-w);
-    margin: 0 auto;
-    padding: 60px 24px;
-  }
-}

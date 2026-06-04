@@ -1,8 +1,7 @@
 // ===== NAV: achica al hacer scroll =====
 window.addEventListener("scroll", () => {
   const nav = document.querySelector("nav");
-  const side = window.innerWidth <= 768 ? "20px" : "60px";
-  nav.style.padding = window.scrollY > 50 ? `10px ${side}` : `16px ${side}`;
+  nav.style.padding = window.scrollY > 50 ? "10px 60px" : "16px 60px";
 });
 
 // ===== SCROLL ANIMATIONS =====
@@ -24,11 +23,8 @@ document.querySelectorAll(".fade-in").forEach((el, i) => {
 });
 
 // ===== SKILLS TOGGLE =====
-const skillsEl = document.getElementById("skills");
-if (window.innerWidth <= 768) skillsEl.classList.add("collapsed");
-
 document.getElementById("skillsToggle").addEventListener("click", () => {
-  skillsEl.classList.toggle("collapsed");
+  document.getElementById("skills").classList.toggle("collapsed");
 });
 
 // ===== CAMBIO DE IDIOMA =====
