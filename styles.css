@@ -470,6 +470,14 @@ footer {
     padding: 14px 20px;
   }
 
+  .section {
+    padding: 36px 20px;
+  }
+
+  #hero {
+    padding: 48px 20px 24px;
+  }
+
   #hero h1 {
     font-size: 38px;
   }
@@ -485,6 +493,6 @@ footer {
     width: 100%;
     max-width: var(--max-w);
     margin: 0 auto;
-    padding: 60px 24px;
+    padding: 36px 20px;
   }
 }
