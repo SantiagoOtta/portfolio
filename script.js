@@ -109,7 +109,6 @@ function addFadeUps() {
     '.skill-group',
     '.project-card',
     '.timeline-item',
-    '.roadmap-card',
     '.contact-card',
   ];
 

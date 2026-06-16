@@ -462,6 +462,12 @@ ul { list-style: none; }
   grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
   gap: 1.5rem;
 }
+.edu-grid-single {
+  grid-template-columns: 1fr;
+  justify-content: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
 
 .edu-item {
   background: var(--bg);
@@ -816,81 +822,10 @@ ul { list-style: none; }
 }
 .tl-stack { display: flex; flex-wrap: wrap; gap: 0.4rem; }
 
-/* === ROADMAP === */
-.roadmap-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-}
-
-.roadmap-card {
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 2rem;
-  transition: border-color var(--transition);
-}
-.roadmap-card:hover { border-color: var(--border-strong); }
-.roadmap-card.now {
-  border-color: rgba(244, 163, 54, 0.2);
-  background: var(--accent-dim);
-}
-.roadmap-card.now:hover { border-color: rgba(244, 163, 54, 0.4); }
-
-.roadmap-phase {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
-}
-.phase-label {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--text-muted);
-}
-.roadmap-card.now .phase-label { color: var(--accent); }
-.phase-tag {
-  background: var(--surface-alt);
-  border: 1px solid var(--border);
-  border-radius: 100px;
-  padding: 0.1rem 0.5rem;
-  font-size: 0.7rem;
-  font-family: var(--font-mono);
-  color: var(--text-dim);
-}
-
-.roadmap-title {
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--text);
-  margin-bottom: 1rem;
-  letter-spacing: -0.01em;
-}
-
-.roadmap-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-}
-.roadmap-list li {
-  font-size: 0.875rem;
-  color: var(--text-muted);
-  line-height: 1.5;
-  padding-left: 1rem;
-  position: relative;
-}
-.roadmap-list li::before {
-  content: '–';
-  position: absolute;
-  left: 0;
-  color: var(--text-dim);
-}
-.roadmap-card.now .roadmap-list li::before { color: var(--accent); }
-
 /* === CONTACT === */
 .contact-section {
-  background: var(--bg);
+  background: var(--surface);
+  border-top: 1px solid var(--border);
 }
 .contact-intro {
   font-size: 1rem;
@@ -1004,7 +939,6 @@ ul { list-style: none; }
   .hero-visual { display: none; }
   .about-grid { grid-template-columns: 1fr; gap: 2rem; }
   .skills-grid { grid-template-columns: 1fr; }
-  .roadmap-grid { grid-template-columns: 1fr; }
   .projects-grid { grid-template-columns: 1fr; }
   .project-card.featured-project { grid-column: unset; }
   .edu-grid { grid-template-columns: 1fr; }
